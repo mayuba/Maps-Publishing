@@ -1,0 +1,61 @@
+<mat-card-header>
+  <mat-toolbar color="primary">
+
+    <!-- menu deroulant (collapse)-->
+    <div class="container-fluid title">
+        <button type="button" class="navbar-toggle collapsed title">
+          <button mat-icon-button [matMenuTriggerFor]="menu" type="button" class="navbar-toggle collapsed">
+            <mat-icon>menu</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>dialpad</mat-icon>
+              <span>Redial</span>
+            </button>
+            <button mat-menu-item disabled>
+              <mat-icon>voicemail</mat-icon>
+              <span>Check voicemail</span>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>notifications_off</mat-icon>
+              <span>Disable alerts</span>
+            </button>
+          </mat-menu>
+        </button>
+      </div>
+<div class="container-fluid title">
+      <button type="button" class="navbar-toggle collapsed title">
+        <button mat-icon-button [matMenuTriggerFor]="menu" type="button" class="navbar-toggle collapsed">
+          <mat-icon>person</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voicemail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
+      </button>
+</div>
+
+    <!-- Titre -->
+    <div class="navbar-toggleable-xs navbar-collapse title" id="bd-main-nav"
+    [ngClass]="{collapse: isCollapsed}" [routerLink]="['']">
+      <span >
+        Angular Maps Publishing
+      </span>
+    </div>
+      <!-- Menu -->
+      <!-- Icon -->
+      <span class="example-spacer"></span>
+      <mat-icon (click)="isCollapsed = true" class="example-icon">chat</mat-icon>
+
+  </mat-toolbar>
+</mat-card-header>

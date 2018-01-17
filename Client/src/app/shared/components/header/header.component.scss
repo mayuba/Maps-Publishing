@@ -1,0 +1,12 @@
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+.title{
+  @media (max-width: 768px){
+  width: 70px;
+  }
+}
